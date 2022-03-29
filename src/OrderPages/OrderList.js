@@ -21,7 +21,7 @@ export default function OrderList() {
    
     useEffect(() => {
         
-    fetch("http://localhost:5000/order/orderlist", {
+    fetch("https://laundryservice1.herokuapp.com/order/orderlist", {
   method: 'GET',
   
   headers: {

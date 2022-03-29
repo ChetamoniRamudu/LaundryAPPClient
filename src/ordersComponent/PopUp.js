@@ -51,7 +51,7 @@ let orderItems=finaldata
 let totalPrice=finalOrdervalue
 async function sucsessPop(){
 console.log(finaldata,"final")
-    const response=  await fetch("http://localhost:5000/order/createorder", {
+    const response=  await fetch("https://laundryservice1.herokuapp.com/order/createorder", {
   method: 'POST',
   body: JSON.stringify({orderItems,totalPrice,totalItems}),
   headers: {

@@ -48,7 +48,7 @@ async function handlesubmit(e){
 
     if ((phone1*1) >0 && (Number(newobject.pincode)*1) >0 ){
         
-   const response=  await fetch("http://localhost:5000/createuser", {
+   const response=  await fetch("https://laundryservice1.herokuapp.com/createuser", {
   method: 'POST',
   body: JSON.stringify(newobject),
   headers: {

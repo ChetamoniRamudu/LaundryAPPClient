@@ -32,9 +32,9 @@ async function handlesubmit(e){
     if (f){
         return}
         
+//http://localhost:5000/
 
-
-const response=  await fetch("http://localhost:5000/login", {
+const response=  await fetch("https://laundryservice1.herokuapp.com/login", {
   method: 'POST',
   body: JSON.stringify(newobject),
   headers: {
